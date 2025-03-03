@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Layout/Header.jsx";
 import Footer from "./components/Layout/Footer.jsx";
 import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Login from "./components/pages/Login";
-import Register from "./components/pages/Register";
 
 function App() {
   return (
