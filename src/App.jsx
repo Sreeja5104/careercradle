@@ -1,24 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Layout/Header.jsx";
-import Footer from "./components/Layout/Footer.jsx";
-import Home from "./components/pages/Home";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
+import Index from "./components/Layout/Index";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <Router>
+    <div className="app">
       <Header />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
-      </div>
+      <Index />
       <Footer />
-    </Router>
+    </div>
   );
-}
+};
 
 export default App;
