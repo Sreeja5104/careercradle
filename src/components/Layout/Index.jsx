@@ -1,12 +1,12 @@
 import React from "react";
-import "../Styles/Index.css";
+import "./Styles/Index.css";
 
 const Index = () => {
   return (
-    <main className="index">
+    <div className="index-container">
       <h1>Welcome to CareerCradle</h1>
       <p>Your gateway to finding the perfect job.</p>
-    </main>
+    </div>
   );
 };
 

@@ -1,10 +1,10 @@
 import React from "react";
-import "../Styles/Footer.css";
+import "./Styles/Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>&copy; 2025 CareerCradle. All rights reserved.</p>
+      © 2025 CareerCradle. All rights reserved.
     </footer>
   );
 };
