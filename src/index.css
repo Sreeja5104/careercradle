@@ -1,4 +1,20 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Style for the main content area */
+.index {
+  flex: 1; /* Allows content to take available space */
+  padding: 20px;
+  margin-top: 80px; /* Adjust for fixed header */
+  margin-bottom: 50px; /* Adjust for fixed footer */
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Optional: Enhance the background for better visibility */
+.index-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px); /* Adjust height excluding header/footer */
+  background-color: #f8f9fa;
 }

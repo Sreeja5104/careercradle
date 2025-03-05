@@ -1,4 +1,5 @@
-.index-container {
-  text-align: center;
+.index {
+  margin-top: 80px;
   padding: 100px 20px;
+  text-align: center;
 }

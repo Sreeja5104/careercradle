@@ -1,13 +1,8 @@
-import React from "react";
-import "./Styles/Index.css";
+// import React from "react";
+import "../styles/index.css";
 
 const Index = () => {
-  return (
-    <div className="index-container">
-      <h1>Welcome to CareerCradle</h1>
-      <p>Your gateway to finding the perfect job.</p>
-    </div>
-  );
+  return <main className="index">Welcome to CareerCradle!</main>;
 };
 
 export default Index;

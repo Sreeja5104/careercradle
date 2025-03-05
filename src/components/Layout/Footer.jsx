@@ -1,12 +1,8 @@
-import React from "react";
-import "./Styles/Footer.css";
+// import React from "react";
+import "../styles/footer.css";
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      © 2025 CareerCradle. All rights reserved.
-    </footer>
-  );
+  return <footer className="footer">&copy; 2025 CareerCradle</footer>;
 };
 
 export default Footer;
