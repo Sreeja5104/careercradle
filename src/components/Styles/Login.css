@@ -1,0 +1,31 @@
+.login-container {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup {
+    background: green;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
