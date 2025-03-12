@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate(); // ✅ Add useNavigate for navigation
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +38,7 @@ const Register = () => {
     setTimeout(() => {
       alert("Signup Successful!");
       setLoading(false);
+      navigate("/login"); // ✅ Redirect to login after successful registration
     }, 2000);
   };
 
@@ -94,9 +98,9 @@ const Register = () => {
 
         <p className="mt-4 text-gray-600 dark:text-gray-400 text-center">
           Already have an account?{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <button onClick={() => navigate("/login")} className="text-blue-600 hover:underline">
             Log in
-          </a>
+          </button>
         </p>
       </div>
     </div>
