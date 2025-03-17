@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import Index from "./components/layout/Index";
-import Register from "./components/layout/Register";
-import Login from "./components/layout/Login";
-import Dashboard from "./components/layout/Dashboard";
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
+import Index from "./components/layout";
+import Register from "./components/layout/register";
+import Login from "./components/layout/login";
+import Dashboard from "./components/layout/dashboard";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
