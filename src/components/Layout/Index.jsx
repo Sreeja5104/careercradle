@@ -1,5 +1,5 @@
 // import React from "react";
-import "../styles/index.css";
+import "../Styles/index.css";
 
 const Index = () => {
   return <main className="index">Welcome to CareerCradle!</main>;
