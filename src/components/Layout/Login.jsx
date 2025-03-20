@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../Styles/login.css";
+import { useNavigate } from "react-router-dom";
+import "../styles/login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPopup, setShowPopup] = useState(false);
-  const [usedEmails, setUsedEmails] = useState(new Set());
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     if (!email || !password) {
@@ -14,16 +14,14 @@ const Login = () => {
       return;
     }
 
-    if (usedEmails.has(email)) {
-      setError("❌ This email has already been used.");
-      return;
-    }
+    // Mock user data for Career Cradle
+    localStorage.setItem("isLoggedIn", "true"); // Save login status
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userName", "Full Name"); // Example user name
+    localStorage.setItem("userRole", "Software Engineer"); // Example role
+    
 
-    setUsedEmails(new Set([...usedEmails, email])); // Add email to used list
-    setShowPopup(true);
-    setError("");
-
-    setTimeout(() => setShowPopup(false), 3000);
+    navigate("/dashboard"); // ✅ Redirect to Dashboard instead of Profile
   };
 
   return (
@@ -44,7 +42,6 @@ const Login = () => {
       <button onClick={handleLogin}>Login</button>
 
       {error && <div className="error">{error}</div>}
-      {showPopup && <div className="popup">✅ Login Successful!</div>}
     </div>
   );
 };

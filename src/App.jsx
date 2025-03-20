@@ -5,7 +5,8 @@ import Index from "./components/Layout/Index";
 import Register from "./components/Layout/Register";
 import Login from "./components/Layout/Login";
 import Dashboard from "./components/Layout/Dashboard";
-import "./App.css";
+import Profile from "./components/Layout/Profile";
+import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </Router>

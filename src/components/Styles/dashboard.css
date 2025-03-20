@@ -1,14 +1,45 @@
-.dashboard-container {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 20px;
-  }
-  
-  h2 {
-    color: blue;
-  }
-  
-  p {
-    color: #333;
-  }
-  
+.dashboard-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align boxes to top */
+  margin-top: 100px;
+}
+
+.jobs {
+  margin-bottom: 40px; /* Moves the courses box down */
+}
+
+.box {
+  width: 45%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apply-btn,
+.enroll-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover,
+.enroll-btn:hover {
+  background-color: #0056b3;
+}
